@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+body{
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    box-shadow: 7px 4px 7px #efefee;
+    background: #fdfdfd;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+header nav .contact{
+    list-style: none;
+}
+
+header nav ul li a,
+header nav .contact li a{
+    margin: 0 8px;
+    padding: 28px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: all ease-in 0.55s;
+}
+
+header nav .contact li a{
+    background: red;
+    color: #ffffff;
+    position: relative;
+    left: -120px;
+}
+header nav .contact li a:hover{
+    background: none;
+    color: #000000;
+}
+
+header nav .name a{
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 1.4px;
+    color: #000000;
+    font-weight: 600;
+}
+
+header nav .name a span{
+    color: red;
+}
+
+header nav .name a i {
+    position: relative;
+    left:8px;
+    top: 2px;
+}
+
+header nav ul li a.active , header nav ul li a:hover{
+    background: red;
+    color: #ffffff;
+}
+
+.home{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1rem;
+    padding: 7% 8%;
+}
+
+.home .home-text h1{
+    font-size: 55px;
+    margin: 0 0 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 11em;
+}
+
+.home .home-text h1 span{
+    color: red;
+}
+
+hr{
+    border: 4px solid red;
+    margin: 0 0 10px;
+    width: 75%;
+    border-radius: 70% 60% 80%;
+}
+
+
+.home .home-text p {
+    margin: 0 0 20px;
+    width: 25em;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.home .home-text input{
+    padding: 9px 4px;
+    width: 370px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #e4e0e0;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+
+.home .home-text input::placeholder{
+    color: #000000;
+}
+
+.home .home-text button{
+    padding: 9.4px 10px;
+    border: none;
+    width: 140px;
+    background: red;
+    color: #ffffff;
+    font-size: 16px;
+    position: relative;
+    left: -10px;
+    cursor: pointer;
+}
+
+.home .home-text button i{
+    margin: 0 4px;
+}
+
+.home .home-image {
+    position: relative;
+    left: -100px;
+    bottom: 20px;
+}
+
+.home .home-image img{
+    width: 880px;
+    height: 620px;
+}
+
+.stats{
+    display: flex;
+    margin: 35px 0 0;
+}
+.stats .one-stats{
+    box-shadow: 4px 7px 7px #c7c7c7;
+    padding: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease-in-out 0.55s;
+}
+.stats .one-stats:nth-child(2){
+    background: red;
+    color: #ffffff;
+    margin: 0 20px;
+}
+.stats .one-stats:hover{
+    transform: scale(1.1);
+}
+.stats .one-stats .number{
+    font-size: 37px;
+    font-weight: 400;
+}
+.stats .one-stats .title{
+    font-size: 14px;
+    font-weight: 400;
+}
+.arrow-down{
+    position: absolute;
+    right: 45px;
+    bottom: 40px;
+    cursor: pointer;
+    transition: all ease-in-out 0.55s;
+}
+
+.arrow-down a{
+    font-size: 35px;
+    text-decoration: none;
+    background: red;
+    color: #ffffff;
+    padding: 8px 12px 8px;
+    border-radius: 50px;
+}
+.arrow-down:hover{
+    transform: translateY(-30px);
+}
